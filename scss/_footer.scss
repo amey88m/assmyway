@@ -1,0 +1,289 @@
+/*myway*/
+
+.myway {
+
+	background: $footer-default-color;
+	border: $b-0;
+	display: block;
+	height: 75px;
+	margin-left: 102px;
+	margin-right: 102px;
+	outline: none;
+	text-align: center;
+	width: 242px;
+
+	.myway-logo {
+
+		color:$white;
+		display: block;
+		font-size:42px;
+		font-weight:100;
+		line-height:80px;
+		position:relative;
+		text-align:center;
+
+		}
+}
+
+.mg-lr {
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+
+
+
+/*footer*/
+footer {
+	color:$white;
+	position:relative;
+
+}
+
+
+	.footer-bottom 
+	{
+	
+		background:#252525;
+		font-weight:100;
+		padding:25px 0;
+
+
+			p {
+	
+			color: $white;
+			font-size: 14px;
+			font-weight:100;
+			letter-spacing: 0.8px;
+			line-height: 40px;
+			word-spacing: 0.4px;	
+				
+				a {
+					color: #4e4e4e;
+
+					&:hover, &:focus {
+						color: #4e4e4e;	
+					}
+				}
+			}	
+
+			ul {
+				list-style-type:none;
+				margin:0;
+
+					li {
+						display:inline-block;
+						margin:4px 7px 4px 0;
+
+								a {
+									border:0px;
+									background:$white;
+									color:$black;
+									display:block;
+									font-size:18px;
+									height:35px;
+									line-height:40px;
+									text-align:center;
+									width:35px;
+
+								}	
+						}
+
+				}
+
+
+
+	}	
+
+
+		
+
+
+
+
+
+
+
+
+.footer-top{
+
+	background: #373737;
+	padding: 55px 0 50px;
+		
+	h4 {
+		color: #8e8e8e;
+		font-size: $font-size-base + 1;
+		font-weight: 100;
+		line-height: 38px;
+		margin-bottom: 2rem;	
+		
+			@include mq-ipad-2 {
+				font-size: 1.678rem;	
+			}
+		}		
+
+	h1 {
+		font-size:78px;
+		font-weight:100;
+		line-height: 70px;
+		margin-bottom:14px;
+
+			@include mq-tab {
+				font-size: 3.338em;
+			}
+
+			@include mq-ipad {
+				//font-size: 3.938em;	
+			}
+
+			@include mq-ipad-2 {
+				font-size: 2.938em;	
+			}
+		}	
+
+	.stay-touch {
+			 border-bottom: 1px solid #4e4e4e;
+			 position: relative
+
+		 }	
+
+	span.w1{
+
+		color: $white;
+		font-size: 1.375rem; //22px
+		font-weight: 500;
+		text-transform:uppercase;
+
+	}	
+
+
+}
+
+
+
+
+.w {
+	color:$white;
+	background: #ff6131;
+}
+
+
+// about 
+.footer-about{
+	
+	p {
+		font-size: 13px;
+		line-height: 1.125rem; //18px
+		margin-top: 10px;
+		text-align: left;
+		word-spacing: 1px;
+	}
+
+} 
+
+// address 
+.address {
+	@extend %ul;
+
+	li {
+		font-size:13px;
+		font-weight:200;
+		line-height:20px;
+
+			i { 
+
+				padding:0 20px 0 0 
+
+			}
+			a { 
+				
+				color: $white  
+
+			}	
+
+	}	
+
+}
+
+// news 
+.footer-latest-news{
+
+	display: flex;
+    flex-direction: row;
+	margin-bottom:15px;
+	margin-top:10px;
+	position: relative;
+	
+	.news-item-image 
+	{
+
+		height: 98px;
+		float: left;
+		margin: 0px 15px 13px 0;
+		overflow: hidden;
+		width: 100px;
+
+			img { 
+
+				height:100% ;
+				width:auto 
+
+				}	
+
+	}		
+
+		
+		.news-item-content 
+		{    
+			@include linx ( $white,  $white );
+				float: right;
+				overflow: hidden;
+				width: 66%; 
+				
+
+					a.title{
+
+						display: block;
+						font-size: 0.9rem;
+						line-height: 23px;
+						text-transform: uppercase;
+						}			
+
+					.new-item-info {
+						display: flex;
+						flex-direction: row;
+
+							li {
+								color:$txt-color-1;
+								display:inline-block;
+								font-size: 0.6875rem;
+								line-height:17px;
+								padding:4px;
+								padding-right:10px;
+								}	
+
+					} 
+
+					hr {
+						margin-bottom:2px;
+						margin-top:10px;
+						border:0;
+						border-top:1px solid $txt-color-1;
+						}
+
+		}	
+
+
+}
+
+
+
+
+.top-margin{ margin-top:64px;}
+
+
+
+
+
+

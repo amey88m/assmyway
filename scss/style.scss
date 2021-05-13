@@ -1,0 +1,24 @@
+@import "_fonts";
+
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "customVariables";
+@import "_functions";
+@import "mixins";
+@import "_reset";
+@import "_border-radius";
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "_navbar";
+@import "_we-love";
+@import "_bigger-box";
+@import "_cool-features";
+@import "_footer";
+@import "animation/flexslider";
+@import "partials";
+@import "animation/animation";
+@import "_flex-animations";
+
+
+
+//change the colors 
+//$cust-ico-color

@@ -1,0 +1,83 @@
+/*__________________________flexslider_____animation__________________*/
+.FromTop, .FromRight, .FadeIn{
+opacity:0;
+-webkit-transition: all 0.7s ease-in-out;
+transition: all 0.7s ease-in-out;
+}
+.captionDelay2{
+-webkit-transition-delay: 0.2s;
+transition-delay: 0.2s;
+}
+.captionDelay4{
+-webkit-transition-delay: 0.4s;	
+transition-delay: 0.4s;	
+}
+.captionDelay5{
+-webkit-transition-delay: 0.5s;	
+transition-delay: 0.5s;	
+}
+.captionDelay6{
+-webkit-transition-delay: 0.6s;	
+transition-delay: 0.6s;		
+}
+.captionDelay8{
+-webkit-transition-delay: 0.8s;	
+transition-delay: 0.8s;		
+}
+.captionDelay9{
+-webkit-transition-delay: 0.9s;	
+transition-delay: 0.9s;		
+}
+.flexslider.top_slider li.flex-active-slide .FromTop{
+opacity:1;
+-webkit-transform:translateY(0);
+transform:translateY(0);
+}
+.flexslider li .FromTop{
+-webkit-transform: translateY(100%);
+transform: translateY(100%);
+}
+
+.flexslider.top_slider li.flex-active-slide .FromRight{
+opacity:1;
+-webkit-transform: translateX(0);
+transform: translateX(0);
+}
+.flexslider li .FromRight{
+-webkit-transform: translateX(100%);
+transform: translateX(100%);
+}
+
+
+.flexslider.top_slider li.flex-active-slide .FadeIn{
+opacity:1;
+}
+.FadeIn{
+-webkit-animation-name:FadeIn;
+	animation-name:FadeIn;
+-webkit-animation-fill-mode:both;
+	animation-fill-mode:both;
+}
+
+@-webkit-keyframes FadeIn{
+				0% {opacity:0;transform: scale(1);}
+				50%{opacity:50%;transform: scale(1.2);}
+				75%{opacity:75%;transform: scale(1.5);}
+				100%{opacity:100%;transform: scale(1);}
+			}
+@-moz-keyframes FadeIn{
+				0% {opacity:0;transform: scale(1);}
+				50%{opacity:50%;transform: scale(1.2);}
+				75%{opacity:75%;transform: scale(1.5);}
+				100%{opacity:100%;transform: scale(1);}
+			}
+@keyframes FadeIn{
+				0% {opacity:0;transform: scale(1);}
+				50%{opacity:50%;transform: scale(1.2);}
+				75%{opacity:75%;transform: scale(1.5);}
+				100%{opacity:100%;transform: scale(1);}
+			}
+
+.flexslider.top_slider{background:#282828;overflow-x:visible;position:relative;margin-bottom:0; border-radius:0;-webkit-border-radius:0; outline:0;border:0;}
+.flexslider.top_slider .flex-direction-nav a:before{ color:#fff;}
+/*_______________//Flexslider___________________*/

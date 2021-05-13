@@ -1,0 +1,36 @@
+@function set-text-color ( $color ) {
+	
+	@if( lightness($color) > 50 ) {
+
+		@return $black;
+
+	}@else if( lightness($color) >= 55 )  {
+
+		@return $indigo;
+
+	}@else {
+
+		@return $white; 
+
+	}
+
+}
+
+
+
+// set function for we-love ico-color bg
+@function set-ico-color( $color ) {
+	
+	@if ( lightness($color) > 90 ) {
+
+		@return $orange;
+
+	} @else {
+
+		@return $white; 
+	}
+
+}
+
+
+

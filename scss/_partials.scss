@@ -1,0 +1,16 @@
+
+$font-stack-1 		: 'roboto'  serif;
+$font-size-default  : 18px;
+$font-weight		: 100;  
+
+
+.funky {
+	
+	font: {
+		family : $font-stack-1;
+		size : $font-size-default;
+		weight: $font-weight;
+	}
+
+}
+

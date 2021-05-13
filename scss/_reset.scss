@@ -1,0 +1,31 @@
+$font-stack-1 : "lato" ,"sans-serif";
+$font-stack-2 : "Roboto", "sans-serif" ;
+
+
+/*reset css*/
+h1,h2,h3,h4,h5,h6,ul,ol,li,p,table,tr,td,fieldset,form,blockquote{ margin:0; padding:0;} 
+h1,h2,h3,h4,h5,h6,p,header,footer,section,aside{ display:block;}
+h1,h2,h3,h4,h5,h6,p,header,footer,aside,section,form,fieldset,blockquote,.w1,.w2,.w3,.w4,.w5,.title1,.titl2,.title3,.title4{font-family: $font-stack-1 }
+
+
+
+body{
+	color: #4e4e4e;
+	font-family: $font-stack-2;	
+	font-family: $font-family-base !important;
+	font-size: 18px;
+}	
+
+
+
+// remove list style from ul li
+
+%ul {
+	
+	text-decoration: none;
+	list-style-type: none;
+
+}
+
+.no-pad {	padding-right : 0  !important }
+

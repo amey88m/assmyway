@@ -1,0 +1,109 @@
+
+@mixin linx ( $link,  $hover ) {
+	
+		a {
+
+				color: $link;
+
+				&:hover {
+					color: $hover;
+					text-decoration: none;
+				}
+
+				&:focus {
+					outline: 0;
+					text-decoration: none;
+				}
+
+		}
+
+}
+
+	
+
+@mixin animation($name) {
+	animation-name : $name;
+	-webkit-animation-name : $name;
+	-moz-animation-name : $name;
+}
+
+@mixin fill-mode( $fm:both ) {
+	animation-fill-mode : $fm;
+	-webkit-animation-fill-mode : $fm;
+	-moz-animation-fill-mode : $fm;
+}
+
+
+@mixin transition($prop, $tt, $ease ) {
+	-webkit-transition : $prop, $tt, $ease ;
+	-moz-transition : $prop, $tt, $ease ;
+	transition : $prop, $tt, $ease ;
+}
+
+@mixin transition-delay( $td) {
+	-webkit-transition : $td;
+	-moz-transition : $td;
+	transition : $td;
+}
+
+
+
+@mixin translateX( $x) {
+	
+	-webkit-transform: translateX($x) ;
+	-moz-transform: translateX($x);
+	transform: translateX($x);
+
+}
+
+@mixin translateY( $y) {
+	
+	-webkit-transform: translateY($y) ;
+	-moz-transform: translateY($y);
+	transform: translateY($y);
+
+}
+
+
+@mixin border-radius( $br ) {
+	border-radius : $br;
+	-webkit-border-radius : $br;
+	-moz-border-radius : $br;
+}
+
+
+
+
+
+@mixin mq-desktop($dw: 1200px) {
+	@media(max-width : $dw ) {
+		@content;
+	}
+}
+
+@mixin mq-tab($tw: 992px) {
+	@media(max-width : $tw ) {
+		@content;
+	}
+}
+
+@mixin mq-ipad($ipadw:768px) {
+	@media(max-width: $ipadw ) {
+		@content;
+	}
+}
+
+@mixin mq-ipad-2( $ipad2:620px) {
+	@media(max-width: $ipad2) {
+		@content;
+	}
+}
+
+
+@mixin mq-ipad-3( $ipad3:467px) {
+	@media(max-width: $ipad3) {
+		@content;
+	}
+}
+		
+

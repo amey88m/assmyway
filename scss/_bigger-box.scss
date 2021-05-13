@@ -1,0 +1,145 @@
+/**BringOut Big box**/
+
+.Bring-out-box {
+
+	background: $cust-bb-color;
+	padding: 55px 0 0px;
+	position: relative;
+	margin-bottom: 3rem; 
+
+
+	.heading {
+
+		h1 {
+			color: $white; 
+		}
+	}
+
+
+	article {
+
+		display: inline-block;
+		min-height: 80px;
+		position: relative;
+
+			&:nth-child(-n+2) { margin-bottom: 1.2rem }
+
+			.BB-heading
+			{
+
+				display: block;
+				padding: 0 0 0 60px;
+				position: relative;
+				display: flex;
+    			flex-direction: row;
+
+					 h2{
+
+						color: set-text-color( $cust-bb-color );
+						font-size: 18px;
+						font-weight: 800;
+						line-height: 40px;
+						margin-bottom: 6px;
+						display: inline-flex;
+
+								@include mq-tab {
+
+									font-size: 13px;	
+								}	
+
+						}
+
+			}
+
+
+			.BB-content
+			{
+				color: #afafaf;
+				font-size: 13px;
+				letter-spacing: 0.4px;
+				line-height: 22px;
+				text-align: left;
+			}
+
+
+		}
+}
+
+
+
+
+.fa-circle-sm {
+
+	background: $cust-ico-color;
+	border: 0;
+	display: inline-flex;
+	@include radius(11px);
+	height:40px;
+	justify-content: center;
+	left:0;
+	overflow:hidden;
+	position : absolute;
+	top: 0;
+	width: 40px;
+
+	i {
+		color: set-ico-color( $cust-ico-color );
+		display: block;
+		font-size: 1.5rem;
+		line-height: 38px;
+		text-align: center;
+
+		}
+
+}
+
+.BB-box-img{
+
+	bottom: -43px ;
+	position: relative;
+
+		@include mq-desktop {
+			bottom: -213px;
+		}
+
+		@include mq-tab {
+
+			position: relative;
+			right: 0;
+			bottom: -479px;
+		 }	
+
+		 @include mq-ipad {
+		 	bottom : -38px; 
+		 }
+	}
+
+img { 
+
+	max-width:100%  
+
+}
+
+.ipad_img{
+
+	margin-left: auto;
+	margin-right: auto;
+	width: 350px;
+
+	@include mq-tab {
+		width: 100%; 
+	}	
+}
+
+
+
+.w1 {
+	color: $white;
+	font-weight:normal;
+}	
+
+.Bring-out-box .heading .w1{ 
+	
+	color: $white;
+	
+	}

@@ -1,0 +1,118 @@
+header {
+	
+	.navbar {
+		border:0;
+		@include radius(0);
+		margin-bottom: $margin-0 ;
+		min-height: 80px;
+		-webkit-border-radius:0;
+
+			.myway-btn {
+				background: $navbar-default-link-color;
+				border:0;
+				@include radius(0);
+				margin-top: ($margin-top-default * 1.5);
+				outline:0;
+				
+				}	
+		}	
+
+	.navbar-brand {
+		display: flex;
+		height: 80px;
+		line-height: 80px;
+		padding: $spacer ($spacer * .25);
+
+			@include  mq-tab {
+			line-height : 20px;
+			margin-left : auto;
+			margin-right : auto;
+			display : block;
+			}
+		}	
+
+	.navbar-collapse {
+
+		@include linx( set-text-color( $navbar-default ) , $white  );
+
+		ul {
+
+			li {
+				
+				a {
+					
+					background-color: transparent;
+					line-height: 40px;
+					padding: ($spacer * 1.8) ($spacer * 1.5);
+					text-transform: capitalize;
+
+					&:hover, &:focus  {
+
+						 background-color: $navbar-default-link-bg-color-active;
+						 color: $navbar-default-link-color;
+					}
+
+					 @include mq-tab {
+						line-height:40px;
+						padding:20px 4px 20px 4px;
+					 }
+
+					 @include mq-ipad {
+					 	padding:7px 4px 6px 17px
+					 }
+				}		
+			}
+		}
+	}
+
+
+}
+
+
+
+
+.navbar-toggler { 
+		
+		position: relative;
+		float: right;
+		padding: 0.75rem 1rem !important;
+		margin-top: ($margin-top-default - .2);
+		margin-right: 15px;
+		margin-bottom: 8px;
+		
+		.icon-bar {
+		display: block;
+		width: 22px;
+		height: 2px;
+		border-radius: 1px;
+
+			&:nth-child(1n+1) {
+
+				margin-top: 4px;
+
+			}
+		}
+}
+
+
+
+
+#myway-btn {
+	
+	.icon-bar{ background-color:#090909 }	
+
+	&:hover, &:focus {
+
+		background-color:#f1f1f1
+
+	}
+}
+
+
+.bg-default {
+	
+	background-color: $navbar-default;
+	color : set-text-color( $navbar-default );
+}
+
+
